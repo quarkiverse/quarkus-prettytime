@@ -1,0 +1,8 @@
+name: Quarkus - PrettyTime
+description: PrettyTime is an OpenSource time formatting library.
+metadata:
+  keywords:
+    - prettytime
+  categories:
+    - "miscellaneous"
+  status: "preview"
