@@ -32,6 +32,9 @@ A singleton `org.ocpsoft.prettytime.PrettyTime` can be injected anywhere.
 @Inject PrettyTime prettyTime;
 ```
 
+**Important**: Be aware that any changes to the injected `PrettyTime` object (as in calling `setLocale` or `setReference`) will reflect on the singleton and its usage in your entire application. In cases where you need to format to a specific locale we recommend you to create a new `PrettyTime` object instead.
+
+
 ### Native Support
 
 This extension is fully supported in native mode.
