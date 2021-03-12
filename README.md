@@ -34,6 +34,18 @@ A singleton `org.ocpsoft.prettytime.PrettyTime` can be injected anywhere.
 
 **Important**: Be aware that any changes to the injected `PrettyTime` object (as in calling `setLocale` or `setReference`) will reflect on the singleton and its usage in your entire application. In cases where you need to format to a specific locale we recommend you to create a new `PrettyTime` object instead.
 
+The singleton may be referenced by the name `prettyTime` when used in a non-typesafe environment such as templates. For example, if used together with the [Qute](https://quarkus.io/guides/qute-reference) templating engine:
+
+```html
+<table>
+  {#for label in labels}
+  <tr>
+    <td>{label.name}</td>
+    <td>Created {inject:prettyTime.format(label.created)}</td>
+  </tr>
+  {/for}
+</table>
+```
 
 ### Native Support
 
