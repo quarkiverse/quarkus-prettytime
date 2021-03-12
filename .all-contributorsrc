@@ -14,6 +14,15 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "mkouba",
+      "name": "Martin Kouba",
+      "avatar_url": "https://avatars.githubusercontent.com/u/913004?v=4",
+      "profile": "https://github.com/mkouba",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
