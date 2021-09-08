@@ -23,7 +23,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.version>2.2.2.Final</quarkus.version>
-    <prettytime.version>5.0.1.Final</prettytime.version>
+    <prettytime.version>5.0.2.Final</prettytime.version>
   </properties>
   <dependencyManagement>
     <dependencies>
