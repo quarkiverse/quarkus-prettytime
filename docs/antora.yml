@@ -1,5 +1,5 @@
 name: quarkus-prettytime
-title: Quarkus - Prettytime
+title: Quarkus Prettytime
 version: dev
 nav:
   - modules/ROOT/nav.adoc
