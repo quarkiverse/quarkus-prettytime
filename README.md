@@ -5,6 +5,8 @@
 _Social Style Date and Time Formatting for Java_
 
 [![Version](https://img.shields.io/maven-central/v/io.quarkiverse.prettytime/quarkus-prettytime?logo=apache-maven&style=for-the-badge)](https://search.maven.org/artifact/io.quarkiverse.prettytime/quarkus-prettytime)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/quarkiverse/quarkus-prettytime.svg?logo=lgtm&logoWidth=18&style=for-the-badge)](https://lgtm.com/projects/g/quarkiverse/quarkus-prettytime/alerts/)
+[![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/quarkiverse/quarkus-prettytime.svg?logo=lgtm&logoWidth=18&style=for-the-badge)](https://lgtm.com/projects/g/quarkiverse/quarkus-prettytime/context:java)
 
 PrettyTime is an OpenSource time formatting library. Completely customizable, it creates human readable, relative timestamps. 
 This extension allows you to use this library in Quarkus native applications.
