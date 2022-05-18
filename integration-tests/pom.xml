@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse.prettytime</groupId>
     <artifactId>quarkus-prettytime-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>0.2.2</version>
   </parent>
   <artifactId>quarkus-prettytime-integration-tests</artifactId>
   <name>Quarkus - Pretty Time - Integration Tests</name>
