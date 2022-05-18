@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse.prettytime</groupId>
     <artifactId>quarkus-prettytime-parent</artifactId>
-    <version>0.2.2</version>
+    <version>999-SNAPSHOT</version>
   </parent>
   <artifactId>quarkus-prettytime</artifactId>
   <name>Quarkus - Pretty Time - Runtime</name>
