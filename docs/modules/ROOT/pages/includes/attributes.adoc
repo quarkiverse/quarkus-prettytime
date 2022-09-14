@@ -1,5 +1,5 @@
-:quarkus-version: 2.9.1.Final
-:quarkus-prettytime-version: 0.2.2
+:quarkus-version: 2.12.2.Final
+:quarkus-prettytime-version: 0.2.3
 
 :quarkus-org-url: https://github.com/quarkusio
 :quarkus-base-url: {quarkus-org-url}/quarkus
