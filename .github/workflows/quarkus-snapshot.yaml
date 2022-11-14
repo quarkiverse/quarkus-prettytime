@@ -11,7 +11,8 @@ env:
   ECOSYSTEM_CI_REPO: quarkusio/quarkus-ecosystem-ci
   ECOSYSTEM_CI_REPO_FILE: context.yaml
   JAVA_VERSION: 11
-
+  QUARKUS_BRANCH: 3.0
+  
   #########################
   # Repo specific setting #
   #########################
