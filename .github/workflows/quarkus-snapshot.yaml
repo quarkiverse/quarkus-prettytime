@@ -45,7 +45,6 @@ jobs:
         with:
           repository: ${{ env.ECOSYSTEM_CI_REPO }}
           path: ecosystem-ci
-          ref: "detect_3.x"
 
       - name: Setup and Run Tests
         run: ./ecosystem-ci/setup-and-test
