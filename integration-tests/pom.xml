@@ -3,32 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkiverse.prettytime</groupId>
-    <artifactId>quarkus-prettytime-parent</artifactId>
+    <artifactId>quarkus-prettytime-root-parent</artifactId>
     <version>999-SNAPSHOT</version>
   </parent>
-  <artifactId>quarkus-prettytime-integration-tests</artifactId>
-  <name>Quarkus - Pretty Time - Integration Tests</name>
-  <dependencies>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkiverse.prettytime</groupId>
-      <artifactId>quarkus-prettytime</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <artifactId>quarkus-prettytime-integration-tests-parent</artifactId>
+  <name>Quarkus - Pretty Time - Integration Tests - Parent</name>
+  <packaging>pom</packaging>
+  <modules>
+    <module>prettytime</module>
+  </modules>
   <build>
     <plugins>
       <plugin>

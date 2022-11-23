@@ -7,13 +7,12 @@
     <version>11</version>
   </parent>
   <groupId>io.quarkiverse.prettytime</groupId>
-  <artifactId>quarkus-prettytime-parent</artifactId>
+  <artifactId>quarkus-prettytime-root-parent</artifactId>
   <version>999-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Quarkus - Pretty Time - Parent</name>
+  <name>Quarkus - Pretty Time - Root - Parent</name>
   <modules>
-    <module>deployment</module>
-    <module>runtime</module>
+    <module>prettytime</module>
     <module>docs</module>
   </modules>
   <properties>
@@ -34,11 +33,6 @@
         <version>${quarkus.version}</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.ocpsoft.prettytime</groupId>
-        <artifactId>prettytime</artifactId>
-        <version>${prettytime.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
