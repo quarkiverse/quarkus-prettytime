@@ -35,6 +35,7 @@ jobs:
       with:
         java-version: 11
         distribution: 'temurin'
+        cache: 'maven'
 
     - name: Build with Maven
       run: mvn -B formatter:validate verify --file pom.xml
