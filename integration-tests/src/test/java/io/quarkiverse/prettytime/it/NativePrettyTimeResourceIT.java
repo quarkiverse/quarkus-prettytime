@@ -1,7 +1,7 @@
 package io.quarkiverse.prettytime.it;
 
-import io.quarkus.test.junit.NativeImageTest;
+import io.quarkus.test.junit.QuarkusIntegrationTest;
 
-@NativeImageTest
+@QuarkusIntegrationTest
 public class NativePrettyTimeResourceIT extends PrettyTimeResourceTest {
 }
