@@ -1,6 +1,7 @@
 name: PrettyTime
 description: PrettyTime is an OpenSource time formatting library.
 metadata:
+  guide: "https://quarkiverse.github.io/quarkiverse-docs/quarkus-prettytime/dev/index.html"
   keywords:
     - prettytime
   categories:
