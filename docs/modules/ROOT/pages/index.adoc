@@ -1,5 +1,4 @@
 = Quarkus - Prettytime
-:extension-status: preview
 
 include::./includes/attributes.adoc[]
 
