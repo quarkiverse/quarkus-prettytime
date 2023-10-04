@@ -41,7 +41,9 @@ jobs:
       run: mvn -B formatter:validate verify --file pom.xml
 
     - name: Store PR id
-      run: echo ${{ github.event.number }} > ./docs/target/generated-docs/pr-id.txt
+      run: |
+        echo ${{ github.event.number }} > ./docs/target/generated-docs/pr-id.txt
+        echo ${{ github.sha }} > ./docs/target/generated-docs/sha.txt
 
     - name: Publishing directory for PR preview
       uses: actions/upload-artifact@v3
