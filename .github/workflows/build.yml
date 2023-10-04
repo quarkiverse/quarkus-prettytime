@@ -42,9 +42,11 @@ jobs:
 
     - name: Store PR id
       run: echo ${{ github.event.number }} > ./docs/target/generated-docs/pr-id.txt
+      if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
 
     - name: Publishing directory for PR preview
       uses: actions/upload-artifact@v3
+      if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
       with:
         name: site
         path: ./docs/target/generated-docs
