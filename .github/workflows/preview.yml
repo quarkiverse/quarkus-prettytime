@@ -22,8 +22,6 @@ jobs:
         run: |
           echo "id=$(<pr-id.txt)" >> $GITHUB_OUTPUT 
           rm -f pr-id.txt
-          echo "sha=$(<sha.txt)" >> $GITHUB_OUTPUT 
-          rm -f sha.txt
       - name: Publishing to surge for preview
         id: deploy
         run: npx surge ./ --domain https://quarkus-prettytime-pr-${{  steps.pr.outputs.id }}-preview.surge.sh --token ${{ secrets.SURGE_TOKEN }}
@@ -32,7 +30,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
-            🎊 PR Preview ${{  steps.pr.outputs.sha }} has been successfully built and deployed to https://quarkus-prettytime-pr-${{ steps.pr.outputs.id }}-preview.surge.sh
+            🎊 PR Preview ${{ github.sha }} has been successfully built and deployed to https://quarkus-prettytime-pr-${{ steps.pr.outputs.id }}-preview.surge.sh
             <img width="300" src="https://user-images.githubusercontent.com/507615/90250366-88233900-de6e-11ea-95a5-84f0762ffd39.png">
             <!-- Sticky Pull Request Comment -->
           body-include: '<!-- Sticky Pull Request Comment -->'
