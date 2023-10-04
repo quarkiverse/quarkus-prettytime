@@ -3,7 +3,7 @@
 
 include::./includes/attributes.adoc[]
 
-Describe what the extension does here.
+PrettyTime is an OpenSource time formatting library. It creates human readable, relative timestamps.
 
 == Installation
 
