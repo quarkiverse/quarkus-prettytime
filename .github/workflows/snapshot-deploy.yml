@@ -18,15 +18,6 @@ jobs:
     name: Deploy Snapshot artifacts
     steps:
       - uses: actions/checkout@v4
-        with:
-          branch: main
-
-      - uses: radcortez/project-metadata-action@main
-        name: Retrieve project metadata
-        id: metadata
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          metadata-file-path: '.github/project.yml'
 
       - uses: actions/setup-java@v4
         with:
