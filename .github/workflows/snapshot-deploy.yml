@@ -15,10 +15,11 @@ defaults:
 jobs:
   deploy-snapshot:
     runs-on: ubuntu-latest
-    name: snapshot-release
-
+    name: Deploy Snapshot artifacts
     steps:
       - uses: actions/checkout@v4
+        with:
+          branch: main
 
       - uses: radcortez/project-metadata-action@main
         name: Retrieve project metadata
