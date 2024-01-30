@@ -6,13 +6,23 @@ concurrency:
 on:
   push:
     branches: [ main ]
+defaults:
+  run:
+    shell: bash
 
 jobs:
-  release-snapshot:
+  deploy-snapshot:
     runs-on: ubuntu-latest
     name: snapshot-release
 
     steps:
+      - uses: radcortez/project-metadata-action@main
+        name: Retrieve project metadata
+        id: metadata
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          metadata-file-path: '.github/project.yml'
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-java@v4
@@ -26,7 +36,7 @@ jobs:
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
-      - name: Maven release ${{steps.metadata.outputs.next-version}}
+      - name: Deploy ${{steps.metadata.outputs.next-version}}
         run: |
           mvn -B deploy -DperformRelease -Prelease
           env:
