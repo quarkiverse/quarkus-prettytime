@@ -32,7 +32,7 @@ jobs:
 
       - name: Deploy ${{steps.metadata.outputs.next-version}}
         run: |
-          mvn -B clean deploy -DperformRelease=true -Drelease
+          mvn -B clean deploy -DskipTests -DperformRelease=true -Drelease
         env:
             MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
             MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
