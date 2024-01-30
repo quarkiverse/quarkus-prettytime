@@ -18,14 +18,14 @@ jobs:
     name: snapshot-release
 
     steps:
+      - uses: actions/checkout@v4
+
       - uses: radcortez/project-metadata-action@main
         name: Retrieve project metadata
         id: metadata
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           metadata-file-path: '.github/project.yml'
-
-      - uses: actions/checkout@v4
 
       - uses: actions/setup-java@v4
         with:
