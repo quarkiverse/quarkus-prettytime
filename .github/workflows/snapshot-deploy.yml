@@ -4,8 +4,10 @@ concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
+
 defaults:
   run:
     shell: bash
