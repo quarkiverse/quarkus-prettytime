@@ -24,7 +24,7 @@
   </scm>
   <properties>
     <quarkus.version>3.2.0.Final</quarkus.version>
-    <prettytime.version>5.0.7.Final</prettytime.version>
+    <prettytime.version>5.0.8.Final</prettytime.version>
   </properties>
   <dependencyManagement>
     <dependencies>
