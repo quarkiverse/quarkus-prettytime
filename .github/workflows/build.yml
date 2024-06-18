@@ -45,7 +45,7 @@ jobs:
         echo ${{ github.event.number }} > ./docs/target/generated-docs/pr-id.txt
 
     - name: Publishing directory for PR preview
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: site
         path: ./docs/target/generated-docs
