@@ -2,8 +2,8 @@ name: Deploy Snapshot
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
 
 defaults:
   run:
@@ -24,4 +24,5 @@ jobs:
     uses: quarkiverse/.github/.github/workflows/perform-release.yml@main
     secrets: inherit
     with:
-      version: main
+      ref: main
+      version: 999-SNAPSHOT
