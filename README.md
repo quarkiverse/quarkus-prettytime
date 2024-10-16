@@ -17,7 +17,7 @@ To get started, add the dependency:
 <dependency>
     <groupId>io.quarkiverse.prettytime</groupId>
     <artifactId>quarkus-prettytime</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>2.0.10</version>
 </dependency>
 ```
 
