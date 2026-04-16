@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   build:
-    uses: quarkiverse/.github/.github/workflows/quarkus-ecosystem-ci.yml@gastaldi-patch-1
+    uses: quarkiverse/.github/.github/workflows/quarkus-ecosystem-ci.yml@main
     secrets: inherit
     with:
       ecosystem_ci_repo: gastaldi/quarkus-ecosystem-ci
