@@ -16,7 +16,5 @@ jobs:
     uses: quarkiverse/.github/.github/workflows/quarkus-ecosystem-ci.yml@main
     secrets: inherit
     with:
-      ecosystem_ci_repo: gastaldi/quarkus-ecosystem-ci
-      ecosystem_ci_repo_branch: build_from_tag
       ecosystem_ci_repo_path: quarkiverse-prettytime
       java_version: 17
