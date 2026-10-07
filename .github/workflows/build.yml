@@ -30,23 +30,12 @@ jobs:
     steps:
     - uses: actions/checkout@v7
 
-    - name: Set up JDK 17
+    - name: Set up JDK 21
       uses: actions/setup-java@v6
       with:
-        java-version: 17
+        java-version: 21
         distribution: 'temurin'
         cache: 'maven'
 
     - name: Build with Maven
       run: mvn -B formatter:validate verify --file pom.xml
-
-    - name: Store PR id
-      run: |
-        echo ${{ github.event.number }} > ./docs/target/generated-docs/pr-id.txt
-
-    - name: Publishing directory for PR preview
-      uses: actions/upload-artifact@v7
-      with:
-        name: site
-        path: ./docs/target/generated-docs
-        retention-days: 3
