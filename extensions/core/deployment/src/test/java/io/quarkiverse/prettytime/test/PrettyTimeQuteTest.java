@@ -15,12 +15,12 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 import org.ocpsoft.prettytime.PrettyTime;
 
 import io.quarkus.qute.Template;
-import io.quarkus.test.QuarkusUnitTest;
+import io.quarkus.test.QuarkusExtensionTest;
 
 public class PrettyTimeQuteTest {
 
     @RegisterExtension
-    static final QuarkusUnitTest config = new QuarkusUnitTest()
+    static final QuarkusExtensionTest config = new QuarkusExtensionTest()
             .setArchiveProducer(() -> ShrinkWrap.create(JavaArchive.class)
                     .addAsResource(new StringAsset("{inject:prettyTime.format(time)}"), "templates/pretty.txt"));
 
